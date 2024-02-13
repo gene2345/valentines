@@ -7,7 +7,7 @@ function Yay() {
             <h1 className="congrats">SEE YOU SOON</h1>
 
 
-            <a href = "https://www.instagram.com/junyi.hs/" target="_blank">
+            <a href = "https://www.instagram.com/junyi.hs/">
             <button className="gene">Handsome Man</button>
             </a>
         </div>
