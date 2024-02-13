@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Failure from './Failure';
+import SuccessOne from './Success';
+import Yay from './Yay';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
-    <App />
+    <Router>
+        <Switch>
+          <Route component={Failure} path="/failure" />
+          <Route component={Yay} path="/yay" />
+          <Route component={SuccessOne} path="/" />
+        </Switch>
+      </Router>
   </React.StrictMode>
 );
 
